@@ -16,6 +16,9 @@ const writeFile = (path, data, opts = 'utf8') =>
 });
 
 async function readJson(path) {
+    if(!fs.existsSync(path)){
+        return {};
+    }
     let str =  await readFile(path);
     return JSON.parse(str.toString());
 }
