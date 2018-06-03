@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b048472-5e2d-4415-86f2-1d701a76a532" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -158,7 +157,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="219" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -235,12 +235,12 @@
       <workItem from="1527770799526" duration="1557000" />
       <workItem from="1527774218732" duration="1092000" />
       <workItem from="1527839803784" duration="637000" />
-      <workItem from="1528058520630" duration="718000" />
+      <workItem from="1528058520630" duration="1517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27303000" />
+    <option name="totallyTimeSpent" value="28102000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
