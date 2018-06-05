@@ -5,7 +5,7 @@ var pm = require("../services/pollingmanager");
 
 /* GET home page. */
 router.get('/:msgId', async function (req, res, next) {
-    let path = "messages/" + req.params.msgId;
+    let path = "datas/messages/" + req.params.msgId;
     var msgs = [];
     if (fileservice.existsSync(path)) {
         var msgs = await fileservice.readJson(path);
@@ -19,10 +19,10 @@ router.get('/:msgId', async function (req, res, next) {
 /* GET home page. */
 router.post('/:msgId', async function (req, res, next) {
     try{
-        if (!fileservice.existsSync("messages")) {
-            fileservice.createDirSync("messages");
+        if (!fileservice.existsSync("datas/messages")) {
+            fileservice.createDirSync("datas/messages");
         }
-        let path = "messages/" + req.params.msgId;
+        let path = "datas/messages/" + req.params.msgId;
         var msgs = [];
         if (fileservice.existsSync(path)) {
             var msgs = await fileservice.readJson(path);

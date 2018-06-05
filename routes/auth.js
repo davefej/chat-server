@@ -12,7 +12,7 @@ router.post('/login', async function (req, res, next) {
         res.status(400);
     }
     let id = md5(user);
-    var data = await fileservice.readJson('users.json');
+    var data = await fileservice.readJson('datas/users.json');
     if (data[id] && data[id].pass == pass) {
         res.send({
             ok: 1,
@@ -36,7 +36,7 @@ router.post('/register', async function (req, res, next) {
     }
     let id = md5(user);
     console.log("new id:" + id);
-    let data = await fileservice.readJson('users.json');
+    let data = await fileservice.readJson('datas/users.json');
     if (data.hasOwnProperty(id)) {
         res.status(400);
         res.send("User already Exists!");
@@ -46,7 +46,7 @@ router.post('/register', async function (req, res, next) {
             user: user,
             pass: pass
         };
-        fileservice.writeJson('users.json', data);
+        fileservice.writeJson('datas/users.json', data);
         res.send({created: 1});
     }
 });
