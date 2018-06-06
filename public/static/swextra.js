@@ -25,38 +25,40 @@ function syncMessage(msg){
   let dbPromise = null;
   const openRequest = indexedDB.open( 'db', 1 );
   openRequest.onsuccess = function(e) {
-    dbPromise = e.target.result;
-    dbPromise.then(function(db) {
-      var tx = db.transaction('store', 'readonly');
-      var store = tx.objectStore('store');
-      return store.get('sandwich');
-    }).then(function(msg) {
 
-      setTimeout(function(){
-        fetch("messages/" + msg.msgId, {
-          mode:"no-cors",
-          method: 'post',
-          headers: {
-            'Content-type': 'application/json'
-          },
-          body: JSON.stringify({
-            msg: {
-              txt: msg.txt,
-              sender: msg.sender
-            }
-          }),
-        }).then(function (response) {
-          return response;
-        })
-          .then(function (text) {
-            console.log('Request successful', text);
+      var db = event.target.result;
+      var tx = db.transaction('unSyncedMessages', 'readwrite');
+      var store = tx.objectStore('unSyncedMessages');
+      var arr = store.getAll();
+      for(var i = 0; i < arr.length;i++){
+        var msg = arr[i];
+        setTimeout(function(){
+          fetch("messages/" + msg.msgId, {
+            mode:"no-cors",
+            method: 'post',
+            headers: {
+              'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+              msg: {
+                txt: msg.txt,
+                sender: msg.sender
+              }
+            }),
+          }).then(function (response) {
+            return response;
           })
-          .catch(function (error) {
-            console.log('Request failed', error);
-          });
-      },1000);
+            .then(function (text) {
+              console.log('Request successful', text);
+            })
+            .catch(function (error) {
+              console.log('Request failed', error);
+            });
+        },1000);
+      }
 
-    });
+
+
   };
 /*
   setTimeout(function(){
