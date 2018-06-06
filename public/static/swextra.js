@@ -1,9 +1,8 @@
 
-var unsentmessages = [];
 self.onmessage = function (msg) {
   msg = msg.data;
-  if(msg.type = "unsentmessage"){
-    unsentmessages.push(msg.data)
+  if(msg.type = "...."){
+    //DO something
   }
 }
 
@@ -13,15 +12,9 @@ self.addEventListener('sync', function(event) {
   }
 });
 
-function syncMessages(){
-  for(var i = 0; i < unsentmessages.length; i++){
-    syncMessage(unsentmessages[i]);
-  }
-  unsentmessages = [];
-}
 var DBVERSION = 8;
 
-function syncMessage(msg) {
+function syncMessages() {
 
   var request = indexedDB.open("db", DBVERSION);
   request.onsuccess = function (event) {
