@@ -23,7 +23,7 @@ function syncMessages(){
 function syncMessage(msg){
 
   let dbPromise = null;
-  const openRequest = indexedDB.open( 'db', 1 );
+  const openRequest = indexedDB.open( 'db', 3 );
   openRequest.onsuccess = function(e) {
 
       var db = event.target.result;
