@@ -12,7 +12,7 @@ self.addEventListener('sync', function(event) {
   }
 });
 
-var DBVERSION = 8;
+var DBVERSION = 10;
 
 function syncMessages() {
 
