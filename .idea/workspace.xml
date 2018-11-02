@@ -2,7 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b048472-5e2d-4415-86f2-1d701a76a532" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/static/easyrtc/easyrtc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/static/easyrtc/socket-io.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/push.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.48a5ebeead29b30fa3d534849223f99b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.48a5ebeead29b30fa3d534849223f99b.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.5db691760d3ee21daf1ece54ab4caccf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.5db691760d3ee21daf1ece54ab4caccf.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.900f6a9df979a57433a82f71aa137f6e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.900f6a9df979a57433a82f71aa137f6e.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.9b02d6b022d849a1a56089a7501bda6f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/app.9b02d6b022d849a1a56089a7501bda6f.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.0714d0f1d9644149e007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.0714d0f1d9644149e007.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.1b9d48e849ab09581e9b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.1d246292b2212af0be3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.1d246292b2212af0be3d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.22bd90d1c683cee391e4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.26bfb71c3e824113ec98.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.26bfb71c3e824113ec98.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.324ccf09a8d0095ce2c8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.324ccf09a8d0095ce2c8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.3bcedf89cbe3b17d8dc8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.3bcedf89cbe3b17d8dc8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.4b8aa9ef396a547de6b5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.4b8aa9ef396a547de6b5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.5d74698f549552f545b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.5d74698f549552f545b7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.67da1dbf2480f17e2405.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.67da1dbf2480f17e2405.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.6b48bbc9806295a8f06c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.6b48bbc9806295a8f06c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.78e2c24bb9445080878a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.78e2c24bb9445080878a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.8d4ff3dad8a54b844db3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.8d4ff3dad8a54b844db3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.c3e390599ad653888f71.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.c3e390599ad653888f71.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.ceffbfae94d2b4511c7c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.ceffbfae94d2b4511c7c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.d07e097349b952d6b780.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.d07e097349b952d6b780.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.da20afa96842e394e08a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.da20afa96842e394e08a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.dfcc1548c69148d7696d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.dfcc1548c69148d7696d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.e660268bd0d59b5fee66.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.e660268bd0d59b5fee66.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.e8fdf48d2d2e62ab3cc4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/app.e8fdf48d2d2e62ab3cc4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/vendor.27abfe68cda6dcca5906.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/vendor.27abfe68cda6dcca5906.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/vendor.546a782c4b2b0a8ccbd5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/vendor.546a782c4b2b0a8ccbd5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/swextra.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/swextra.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pollingmanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/pollingmanager.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,47 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/messages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+            <state relative-caret-position="34">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -80,6 +106,21 @@
       <find>https</find>
       <find>port</find>
       <find>dev</find>
+      <find>httpA</find>
+      <find>express</find>
+      <find>e</find>
+      <find>app</find>
+      <find>navigator.c</find>
+      <find>c6</find>
+      <find>body</find>
+      <find>AAA</find>
+      <find>privateVapidKey</find>
+      <find>fileservice</find>
+      <find>await</find>
+      <find>awa</find>
+      <find>publicVapidKey</find>
+      <find>async</find>
+      <find>push/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,15 +133,21 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/messages/0cc175b9c0f1b6a831c399e269772661_92eb5ffee6ae2fec3ad71c777531578f" />
         <option value="$PROJECT_DIR$/users.json" />
-        <option value="$PROJECT_DIR$/services/pollingmanager.js" />
         <option value="$PROJECT_DIR$/services/fileservice.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/public/static/manifest.json" />
         <option value="$PROJECT_DIR$/routes/messages.js" />
         <option value="$PROJECT_DIR$/routes/auth.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/push.js" />
+        <option value="$PROJECT_DIR$/public/static/js/app.20fba72a2dc1fd7762d3.js.map" />
+        <option value="$PROJECT_DIR$/public/sw.js" />
+        <option value="$PROJECT_DIR$/public/static/js/app.ec66d0a432f275600117.js" />
+        <option value="$PROJECT_DIR$/services/pollingmanager.js" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -121,10 +168,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-237" />
+    <option name="x" value="-1288" />
     <option name="y" value="-8" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,6 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,22 +187,16 @@
               <item name="chat-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="chat-server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="chat-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pwa-chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
@@ -203,26 +245,34 @@
       <workItem from="1528093165859" duration="732000" />
       <workItem from="1528196523756" duration="6399000" />
       <workItem from="1528268285198" duration="5615000" />
-      <workItem from="1528387625935" duration="450000" />
+      <workItem from="1528387625935" duration="686000" />
+      <workItem from="1529398306191" duration="9000" />
+      <workItem from="1540818314006" duration="179000" />
+      <workItem from="1540818597155" duration="4702000" />
+      <workItem from="1540999540171" duration="1262000" />
+      <workItem from="1541015602171" duration="1796000" />
+      <workItem from="1541060066888" duration="1228000" />
+      <workItem from="1541145225823" duration="12250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44578000" />
+    <option name="totallyTimeSpent" value="66240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21800596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2400636" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27227724" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26914153" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -231,7 +281,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,70 +290,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/fileservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/fileservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/messages/0cc175b9c0f1b6a831c399e269772661_92eb5ffee6ae2fec3ad71c777531578f" />
-    <entry file="file://$PROJECT_DIR$/routes/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/pollingmanager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -458,37 +443,7 @@
     <entry file="file://$PROJECT_DIR$/services/file.js" />
     <entry file="file://$PROJECT_DIR$/messages/0cc175b9c0f1b6a831c399e269772661_92eb5ffee6ae2fec3ad71c777531578f" />
     <entry file="file://$PROJECT_DIR$/services/pollingmanager" />
-    <entry file="file://$PROJECT_DIR$/services/pollingmanager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/js/mdb.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sw.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/users.json" />
-    <entry file="file://$PROJECT_DIR$/services/fileservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -503,38 +458,134 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/easyrtc/easy_common.js" />
+    <entry file="file://$PROJECT_DIR$/public/static/easyrtc/easyrtc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/easyrtc/socket-io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret column="264" selection-start-column="264" selection-end-column="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/mdb.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/app.c6b9541d78c433025eb8.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret column="58330" selection-start-column="58330" selection-end-column="58330" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="162">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/fileservice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/push.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/app.20fba72a2dc1fd7762d3.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret column="37064" selection-start-column="37053" selection-end-column="37064" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/app.ec66d0a432f275600117.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret column="8453" selection-start-column="8453" selection-end-column="8453" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/pollingmanager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="28" column="119" selection-start-line="28" selection-start-column="119" selection-end-line="28" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>

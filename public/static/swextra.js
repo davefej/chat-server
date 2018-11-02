@@ -12,6 +12,15 @@ self.addEventListener('sync', function(event) {
   }
 });
 
+self.addEventListener('push', ev => {
+  const data = ev.data.json();
+  console.log('Got push', data);
+  self.registration.showNotification(data.title, {
+    body: "Üzenete érkezett",
+    icon: 'https://pwachat.ddns.net/static/img/icon192.png'
+  });
+});
+
 var DBVERSION = 10;
 
 function syncMessages() {

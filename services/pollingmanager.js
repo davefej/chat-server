@@ -1,3 +1,5 @@
+const webpush = require('web-push');
+var fileservice = require("./fileservice");
 var connections = {};
 module.exports = {
 
@@ -15,12 +17,20 @@ module.exports = {
 
     msgArrived: function(msgId,msg){
         var ids = msgId.split("_");
+
         if(isSubscribed(ids[0])){
             sendMessage(ids[0],msg);
         }
         if(isSubscribed(ids[1])){
             sendMessage(ids[1],msg);
         }
+        console.log("Webpuhs called")
+         fileservice.readJson('datas/users.json').then(function(data){
+           webpush.sendNotification(data[ids[1]].pushdata, JSON.stringify({msgId:msgId,msg:msg,title:"Üzent érkezett"})).catch(error => {
+               console.error(error.stack);
+           });
+        });
+
     },
 
 

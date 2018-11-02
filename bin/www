@@ -9,6 +9,8 @@ var debug = require('debug')('chat-server:server');
 var http = require('http');
 var https = require('https');
 const fs = require('fs');
+var io      = require("socket.io");         // web socket external module
+var easyrtc = require("easyrtc");           // EasyRTC external module
 
 var prod = false;
 if(prod){
@@ -45,6 +47,7 @@ if(prod){
 }
 
 
+
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -52,11 +55,14 @@ if(prod){
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-
+var socketServer = io.listen(server);
+var easyrtcServer = easyrtc.listen(app, socketServer);
 if(prod){
     httpsServer.listen(port2);
     httpsServer.on('error', onError);
     httpsServer.on('listening', onListening);
+    var socketServer = io.listen(httpsServer);
+    var easyrtcServer = easyrtc.listen(app, socketServer);
 }
 
 
