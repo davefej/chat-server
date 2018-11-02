@@ -8,3 +8,4 @@ datas/*
 *.ntvs*
 *.njsproj
 *.sln
+*.env
