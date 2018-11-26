@@ -14,14 +14,15 @@ module.exports = {
             closeAndDelete(userId);
         }
     },
-    isOnline: function(userId){
-        return isSubscribed(userId);
-    },
     msgArrived: function(msgId,msg){
-        var receiverId = receiverId(msgId,msg.sender);
-        if(isSubscribed(receiverId)){
-            sendMessage(receiverId,msg);
+
+        var toId = otherId(msgId,msg.sender);
+
+        if(isSubscribed(toId)){
+            console.log("isSubscribed true");
+            sendMessage(toId,msg);
         }else{
+            console.log("isSubscribed false");
             pushservice.newMsg(msgId,msg);
         }
     },
@@ -65,8 +66,10 @@ function closeAndDelete(userId){
 }
 
 
-function receiverId(msgId,senderId){
+function otherId(msgId,senderId){
+    console.log("receiver split")
     var ids = msgId.split("_");
+    console.log("receiver split:",ids)
     if(ids[0] == senderId){
         return ids[1];
     }else{

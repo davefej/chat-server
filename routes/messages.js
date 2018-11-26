@@ -30,7 +30,7 @@ router.post('/:msgId', async function (req, res, next) {
         msgs.push(req.body.msg);
         await fileService.writeJson(path,msgs);
         pollingService.msgArrived(req.params.msgId, req.body.msg);
-        console.log("MSG arrived: "+req.params.msgId)
+        console.log("MSG arrived: "+req.params.msgId);
         pollingService.log();
         res.send({ok:1});
     }catch(e){
