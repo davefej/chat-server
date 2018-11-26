@@ -6,12 +6,12 @@ webPush.setVapidDetails('mailto:daveteszt@gmail.com', process.env.PUBLIC_VAPID_K
 var dev = process.env.DEV == "1";
 module.exports = {
     newMsg(msgId,msg){
-        var receiverId = receiverId(msgId,msg.sender);
+        var toId = otherId(msgId,msg.sender);
         fileService.readJson('datas/users.json').then(function(data){
             var senderName = data[msg.sender].user;
             var msgShort = msg.txt.length > 20 ? msg.txt.substr(0,17)+"..." : msg.txt;
             if(!dev){
-                webPush.sendNotification(data[receiverId].pushdata, JSON.stringify({
+                webPush.sendNotification(data[toId].pushdata, JSON.stringify({
                     senderName:senderName,
                     msgId:msgId,
                     body:msgShort,
@@ -25,7 +25,7 @@ module.exports = {
     }
 };
 
-function receiverId(msgId,senderId){
+function otherId(msgId,senderId){
     var ids = msgId.split("_");
     if(ids[0] == senderId){
         return ids[1];
