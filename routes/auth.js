@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var md5 = require('md5');
-var fileservice = require("../services/fileservice");
+var fileservice = require("../services/fileService");
 
 
 /* login */
@@ -16,7 +16,8 @@ router.post('/login', async function (req, res, next) {
     if (data[id] && data[id].pass == pass) {
         res.send({
             ok: 1,
-            id: id
+            id: id,
+            salt:md5("SALT_"+user+"_SALT")
         });
     } else {
         res.status(401);

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var fileservice = require("../services/fileservice");
+var fileservice = require("../services/fileService");
 
 /* GET users listing. */
 router.get('/', async function (req, res, next) {

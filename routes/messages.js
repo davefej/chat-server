@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var fileservice = require("../services/fileservice");
-var pm = require("../services/pollingmanager");
+var fileService = require("../services/fileService");
+var pollingService = require("../services/pollingService");
 
 /* GET home page. */
 router.get('/:msgId', async function (req, res, next) {
     let path = "datas/messages/" + req.params.msgId;
     var msgs = [];
-    if (fileservice.existsSync(path)) {
-        var msgs = await fileservice.readJson(path);
+    if (fileService.existsSync(path)) {
+        var msgs = await fileService.readJson(path);
     }
     res.send({
         ok: 1,
@@ -19,19 +19,19 @@ router.get('/:msgId', async function (req, res, next) {
 /* GET home page. */
 router.post('/:msgId', async function (req, res, next) {
     try{
-        if (!fileservice.existsSync("datas/messages")) {
-            fileservice.createDirSync("datas/messages");
+        if (!fileService.existsSync("datas/messages")) {
+            fileService.createDirSync("datas/messages");
         }
         let path = "datas/messages/" + req.params.msgId;
         var msgs = [];
-        if (fileservice.existsSync(path)) {
-            var msgs = await fileservice.readJson(path);
+        if (fileService.existsSync(path)) {
+            var msgs = await fileService.readJson(path);
         }
         msgs.push(req.body.msg);
-        await fileservice.writeJson(path,msgs);
-        pm.msgArrived(req.params.msgId, req.body.msg);
+        await fileService.writeJson(path,msgs);
+        pollingService.msgArrived(req.params.msgId, req.body.msg);
         console.log("MSG arrived: "+req.params.msgId)
-        pm.log();
+        pollingService.log();
         res.send({ok:1});
     }catch(e){
         res.end();
@@ -41,10 +41,10 @@ router.post('/:msgId', async function (req, res, next) {
 
 /* GET home page. */
 router.get('/polling/:userId', async function (req, res, next) {
-    pm.subscribe(req.params.userId,res);
+    pollingService.subscribe(req.params.userId,res);
 
     console.log("Subscribed:"+req.params.userId)
-    pm.log();
+    pollingService.log();
 
 });
 
