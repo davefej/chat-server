@@ -1,13 +1,22 @@
 
 var connections = {};
 var pushservice = require("./pushService");
+
 module.exports = {
 
-    subscribe: function(userId,response){
+    subscribe: function(userId,request,response){
+        var time = new Date().getTime();
         connections[userId] = {
             res:response,
-            time:new Date().getTime()
+            time:time
         };
+        request.on("close",function(){
+            if(isSubscribed(userId)){
+                if(connections[userId].time == time){
+                    closeAndDelete(userId);
+                }
+            }
+        })
     },
     unsubscribe: function(userId){
         if(isSubscribed(userId)){
@@ -67,9 +76,7 @@ function closeAndDelete(userId){
 
 
 function otherId(msgId,senderId){
-    console.log("receiver split")
     var ids = msgId.split("_");
-    console.log("receiver split:",ids)
     if(ids[0] == senderId){
         return ids[1];
     }else{

@@ -41,7 +41,7 @@ router.post('/:msgId', async function (req, res, next) {
 
 /* GET home page. */
 router.get('/polling/:userId', async function (req, res, next) {
-    pollingService.subscribe(req.params.userId,res);
+    pollingService.subscribe(req.params.userId,req,res);
 
     console.log("Subscribed:"+req.params.userId)
     pollingService.log();
