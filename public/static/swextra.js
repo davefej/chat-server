@@ -21,7 +21,7 @@ self.addEventListener('push', ev => {
   });
 });
 
-var DBVERSION = 10;
+var DBVERSION = 2;
 
 function syncMessages() {
 
