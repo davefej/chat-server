@@ -13,10 +13,12 @@ module.exports = {
             if(!dev){
                 webPush.sendNotification(data[toId].pushdata, JSON.stringify({
                     senderName:senderName,
-                    msgId:msgId,
                     body:msgShort,
                     title:senderName+" üzenetet küldött",
-                    icon:'https://pwachat.ddns.net/static/img/icon192.png'
+                    icon:'https://pwachat.ddns.net/static/img/icon192.png',
+                    clickData:{
+                        messageId:msgId
+                    }
                 })).catch(error => {
                     console.error(error.stack);
                 });

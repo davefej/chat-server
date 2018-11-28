@@ -18,7 +18,8 @@ self.addEventListener('push', ev => {
   self.registration.showNotification(data.title, {
     body: data.body,
     icon: data.icon,
-    tag:"messageArrived"
+    tag:"messageArrived",
+    data:data.clickData
   });
 });
 
