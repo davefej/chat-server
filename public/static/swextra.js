@@ -17,8 +17,16 @@ self.addEventListener('push', ev => {
   console.log('Got push', data);
   self.registration.showNotification(data.title, {
     body: data.body,
-    icon: data.icon
+    icon: data.icon,
+    tag:"messageArrived"
   });
+});
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  event.waitUntil(
+    clients.openWindow("https://pwachat.ddns.net"+ "?messageId=" + event.notification.data.messageId)
+  );
 });
 
 var DBVERSION = 2;
@@ -95,7 +103,7 @@ function sendMessage(msg){
     console.error("MessageId missing",msg);
     return;
   }
-  delete msg.messageId;
+
     fetch("messages/" + messageId, {
       mode: "cors",
       method: 'post',
