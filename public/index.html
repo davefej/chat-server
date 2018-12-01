@@ -1,13 +1,21 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=manifest href=static/manifest.json><link rel="shortcut icon" type=image/png href=static/img/favicon.ico><title>pwa-chat</title><link rel=stylesheet href=static/css/font-awesome.min.css><link href=static/css/bootstrap.min.css rel=stylesheet><link href=static/css/jquery-ui.min.css rel=stylesheet><link href=static/css/mdb.min.css rel=stylesheet><link href=static/css/style.css rel=stylesheet><link href=static/emoji/jquery.lsxemojipicker.css rel=stylesheet><link href=/static/css/app.fa189a8ff157779fb10c23a0a173b323.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=static/js/jquery-3.2.1.min.js></script><script type=text/javascript src=static/js/jquery-ui.min.js></script><script type=text/javascript src=static/js/popper.min.js></script><script type=text/javascript src=static/js/bootstrap.min.js></script><script type=text/javascript src=static/js/mdb.min.js></script><script type=text/javascript src=static/easyrtc/socket-io.js></script><script type=text/javascript src=static/easyrtc/easyrtc.js></script><script type=text/javascript src=static/js/md5.js></script><script type=text/javascript src=static/js/sha256.min.js></script><script src=https://twemoji.maxcdn.com/2/twemoji.min.js></script><script src=static/emoji/jquery.lsxemojipicker.js></script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.2218bfba3f8095150879.js></script><script type=text/javascript src=/static/js/app.3716187968c3afcde6a7.js></script></body><script>if ('serviceWorker' in navigator) {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=manifest href=static/manifest.json><link rel="shortcut icon" type=image/png href=static/img/favicon.ico><title>pwa-chat</title><link rel=stylesheet href=static/css/font-awesome.min.css><link href=static/css/bootstrap.min.css rel=stylesheet><link href=static/css/jquery-ui.min.css rel=stylesheet><link href=static/css/mdb.min.css rel=stylesheet><link href=static/css/style.css rel=stylesheet><link href=static/emoji/jquery.lsxemojipicker.css rel=stylesheet><link href=/static/css/app.5769d044f079ca306cb054309ba598bd.css rel=stylesheet></head><body><div id=add_to_home style=display:none;>Hozzáadja a kezdőképernyőhöz?<div class=btn-container><button onclick=homeInstall(true)>Igen</button> <button onclick=homeInstall(false)>Nem</button></div></div><div id=app></div><script type=text/javascript src=static/js/jquery-3.2.1.min.js></script><script type=text/javascript src=static/js/jquery-ui.min.js></script><script type=text/javascript src=static/js/popper.min.js></script><script type=text/javascript src=static/js/bootstrap.min.js></script><script type=text/javascript src=static/js/mdb.min.js></script><script type=text/javascript src=static/easyrtc/socket-io.js></script><script type=text/javascript src=static/easyrtc/easyrtc.js></script><script type=text/javascript src=static/js/md5.js></script><script type=text/javascript src=static/js/sha256.min.js></script><script src=https://twemoji.maxcdn.com/2/twemoji.min.js></script><script src=static/emoji/jquery.lsxemojipicker.js></script><style>#add_to_home{
+      position: absolute;
+      width: 300px;
+      top: 0px;
+      text-align: center;
+      padding: 0.3em;
+      margin: auto;
+      background: white;
+      left: 3em;
+      box-shadow: rgba(0, 0, 0, 0.18) 0px 5px 11px 0px, rgba(0, 0, 0, 0.15) 0px 4px 15px 0px;
+      z-index: 3;
+    }</style><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.2218bfba3f8095150879.js></script><script type=text/javascript src=/static/js/app.b91414bed54de0d52f1f.js></script></body><script>if (navigator && 'serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-
       navigator.serviceWorker.register('sw.js').then(function(registration) {
-        // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
         window.registration = registration;
       }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
+        console.error('ServiceWorker registration failed: ', err);
       });
     });
   }
@@ -20,9 +28,17 @@
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
     if(confirm("Add to homesceen?")){
-      homescreen();
+
+      $("#add_to_home").show("blind");
     }
   });
+
+  function homeInstall(bool){
+    $("#add_to_home").hide();
+    if(bool){
+      homescreen();
+    }
+  }
 
   function homescreen(){
     deferredPrompt.prompt();
