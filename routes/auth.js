@@ -13,7 +13,7 @@ router.post('/login', async function (req, res, next) {
     }
     let id = md5(user);
     var data = await fileservice.readJson('datas/users.json');
-    if (data[id] && data[id].pass == pass) {
+    if (data[id] && data[id].pass.toLowerCase() == md5(pass).toLowerCase()) {
         res.send({
             ok: 1,
             id: id,
@@ -45,7 +45,7 @@ router.post('/register', async function (req, res, next) {
     } else {
         data[id] = {
             user: user,
-            pass: pass
+            pass: md5(pass)
         };
         fileservice.writeJson('datas/users.json', data);
         res.send({created: 1});

@@ -7,7 +7,7 @@ module.exports = {
     subscribe: function(userId,request,response){
         var time = new Date().getTime();
         connections[userId] = {
-            res:response,
+            resp:response,
             time:time
         };
         request.on("close",function(){
@@ -24,9 +24,7 @@ module.exports = {
         }
     },
     msgArrived: function(msgId,msg){
-
         var toId = otherId(msgId,msg.sender);
-
         if(isSubscribed(toId)){
             console.log("isSubscribed true");
             sendMessage(toId,msg);
@@ -50,13 +48,13 @@ module.exports = {
 };
 
 function isSubscribed(userId){
-    return connections.hasOwnProperty(userId) && connections[userId].hasOwnProperty("res");
+    return connections.hasOwnProperty(userId) && connections[userId].hasOwnProperty("resp");
 }
 
 function sendMessage(userId,msg){
     var ret = false;
     try{
-        connections[userId].res.send(msg);
+        connections[userId].resp.send(msg);
         ret = true;
     }catch (e) {
         console.log(e.toString());
@@ -67,8 +65,8 @@ function sendMessage(userId,msg){
 }
 
 function closeAndDelete(userId){
-    if(!connections[userId].res.finished)
-        connections[userId].res.end();
+    if(!connections[userId].resp.finished)
+        connections[userId].resp.end();
     delete connections[userId];
 
     console.log("Deleted"+userId);
